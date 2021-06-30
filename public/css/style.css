@@ -1,0 +1,20 @@
+/* First declare your root CSS variables */
+
+:root {
+    --bg-color: #000000;
+    --txt-color: #808080;
+    --box-width: 70%;
+    --box-margin: 0 auto;
+}
+
+/* On your desired html tags this is how you declare the variables */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+main {
+    width: var(--box-width);
+    margin: var(--box-margin);
+}
