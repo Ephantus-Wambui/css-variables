@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* First declare your root CSS variables */
 
 :root {
     --bg-color: #000000;
     --txt-color: #808080;
+    --headings-color: linear-gradient(120deg, rgb(158, 158, 134), rgb(144, 221, 144));
     --box-width: 70%;
     --box-margin: 0 auto;
+    --fonts: 'Poppins', sans-serif;
 }
 
 /* On your desired html tags this is how you declare the variables */
@@ -12,9 +16,15 @@
 body {
     background-color: var(--bg-color);
     color: var(--txt-color);
+    font-family: var(--fonts);
 }
 
 main {
     width: var(--box-width);
     margin: var(--box-margin);
+}
+
+h1 {
+    background-image: var(--headings-color);
+    text-align: center;
 }
